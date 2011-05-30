@@ -1,0 +1,78 @@
+NAME
+    NSMS::API - API para enviar SMS através da NSMS
+    (http://www.nsms.com.br/)
+
+VERSION
+    version 0.001
+
+SYNOPSIS
+        use NSMS::API;
+
+        my $sms = NSMS::API->new(
+            username => 'user',
+            password => 'pass',
+            debug => 0
+        );
+
+        $sms->to('1188220000');
+        $sms->text('teste de sms');
+
+        # ou
+
+        print $sms->send('1188888888', 'teste de sms');
+
+DESCRIÇÃO
+    NSMS::API é uma simples API para enviar sms através da plataforma
+    oferecida pela NSMS, com este módulo você pode usufruir de pequenas
+    operações para facilitar a integração com o seu sistema de forma
+    rápida.
+
+    Para mais informações sobre a empresa e o produto, veja
+    <http://www.nsms.com.br>
+
+ATRIBUTOS
+  ua
+    Você pode utilizar um user-agent alternativo. (Padrão: LWP::UserAgent)
+
+  username
+    Usuário NSMS.
+
+  password
+    Senha NSMS.
+
+  baseurl
+    URL para requisição na NSMS, não há por que alterar este atributo a
+    não ser que você tenha certeza do que esteja fazendo.
+
+  debug
+    Opção para imprimir informações relacionada as requisições.
+
+  to
+    Número de destino. (DDD + Número)
+
+  text
+    Mensagem para ser enviada, até 140 caracteres.
+
+  has_auth
+    Verificar se já esta autenticado.
+
+MÉTODOS
+  auth
+    Autenticar.
+
+  send
+    send(to, text)
+
+    Enviar SMS, opcionalmente pode passar dois parametros, o número de
+    destino e o texto. Porém, caso você não passe estes valores, você
+    deve ter setado eles anteriormente através dos atributos to e text.
+
+AUTHOR
+    Thiago Rondon <thiago@nsms.com.br>
+
+COPYRIGHT AND LICENSE
+    This software is copyright (c) 2011 by NSMS, Thiago Rondon.
+
+    This is free software; you can redistribute it and/or modify it under
+    the same terms as the Perl 5 programming language system itself.
+

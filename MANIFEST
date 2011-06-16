@@ -6,7 +6,7 @@ META.yml
 Makefile.PL
 README
 dist.ini
-example.pl
+eg/perl.pl
 lib/NSMS/API.pm
 t/00-compile.t
 t/000-report-versions-tiny.t

@@ -1,10 +1,10 @@
 {
-   "abstract" : "API para enviar SMS atrav\u00c3\u00a9s da NSMS (http://www.nsms.com.br/)",
+   "abstract" : "API para enviar SMS atrav&eacute;s da NSMS (http://www.nsms.com.br/)",
    "author" : [
       "Thiago Rondon <thiago@nsms.com.br>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200006, CPAN::Meta::Converter version 2.110440",
+   "generated_by" : "Dist::Zilla version 4.200007, CPAN::Meta::Converter version 2.110440",
    "license" : [
       "perl_5"
    ],
@@ -49,10 +49,10 @@
       },
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/maluco/NSMS-API/Queue-Base.git",
-         "web" : "http://github.com/maluco/NSMS-API/Queue-Base"
+         "url" : "git://github.com/maluco/NSMS-API.git",
+         "web" : "http://github.com/maluco/NSMS-API"
       }
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }
 

@@ -12,9 +12,8 @@ use HTTP::Response;
 use LWP::UserAgent;
 use JSON;
 
-# ABSTRACT: API para enviar SMS através da NSMS (http://www.nsms.com.br/)
-
-our $VERSION = '0.001'; # VERSION
+# ABSTRACT: API para enviar SMS atrav&eacute;s da NSMS (http://www.nsms.com.br/)
+our $VERSION = '0.002'; # VERSION
 
 
 has ua => (
@@ -54,7 +53,7 @@ has debug => (
 
 
 subtype 'NSMS_Number' => as 'Str' => where { $_ =~ /^[0-9]{10}$/ } =>
-  message { "The number you provider, $_, was not a mobile number" };
+    message {"The number you provider, $_, was not a mobile number"};
 
 has to => (
     is  => 'rw',
@@ -63,7 +62,7 @@ has to => (
 
 
 subtype 'NSMS_Message' => as 'Str' => where { length($_) < 140 } =>
-  message { "The lenght of message has more then 140 chars." };
+    message {"The lenght of message has more then 140 chars."};
 
 has text => (
     is  => 'rw',
@@ -87,10 +86,10 @@ has url_sendsms => (
     default => sub {
         my $self = shift;
         join( '/', $self->baseurl, 'get', 'json' )
-          . '?to=55'
-          . $self->to
-          . '&content='
-          . uri_escape( $self->text );
+            . '?to=55'
+            . $self->to
+            . '&content='
+            . uri_escape( $self->text );
 
     }
 );
@@ -141,11 +140,11 @@ __END__
 
 =head1 NAME
 
-NSMS::API - API para enviar SMS através da NSMS (http://www.nsms.com.br/)
+NSMS::API - API para enviar SMS atrav&eacute;s da NSMS (http://www.nsms.com.br/)
 
 =head1 VERSION
 
-version 0.001
+version 0.002
 
 =head1 SYNOPSIS
 

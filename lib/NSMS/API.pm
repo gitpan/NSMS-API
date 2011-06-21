@@ -11,9 +11,10 @@ use HTTP::Request::Common;
 use HTTP::Response;
 use LWP::UserAgent;
 use JSON;
+use utf8;
 
 # ABSTRACT: API para enviar SMS atrav&eacute;s da NSMS (http://www.nsms.com.br/)
-our $VERSION = '0.002'; # VERSION
+our $VERSION = '0.003'; # VERSION
 
 
 has ua => (
@@ -144,7 +145,7 @@ NSMS::API - API para enviar SMS atrav&eacute;s da NSMS (http://www.nsms.com.br/)
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

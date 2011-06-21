@@ -27,7 +27,8 @@ requires:
   Moose: 0
   Moose::Util::TypeConstraints: 0
   URI::Escape: 0
+  utf8: 0
 resources:
   bugtracker: http://github.com/maluco/NSMS-API/issues
   repository: git://github.com/maluco/NSMS-API.git
-version: 0.002
+version: 0.003

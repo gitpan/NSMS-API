@@ -34,9 +34,10 @@ my %WriteMakefileArgs = (
     'LWP::UserAgent' => '0',
     'Moose' => '0',
     'Moose::Util::TypeConstraints' => '0',
-    'URI::Escape' => '0'
+    'URI::Escape' => '0',
+    'utf8' => '0'
   },
-  'VERSION' => '0.002',
+  'VERSION' => '0.003',
   'test' => {
     'TESTS' => 't/*.t'
   }

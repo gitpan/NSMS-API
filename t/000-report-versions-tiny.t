@@ -63,6 +63,7 @@ eval { $v .= pmver('Moose::Util::TypeConstraints','any version') };
 eval { $v .= pmver('Test::Mock::LWP::Dispatch','any version') };
 eval { $v .= pmver('Test::More','0.88') };
 eval { $v .= pmver('URI::Escape','any version') };
+eval { $v .= pmver('utf8','any version') };
 
 
 

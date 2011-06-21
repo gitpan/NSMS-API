@@ -1,5 +1,5 @@
 {
-   "abstract" : "API para enviar SMS atrav&eacute;s da NSMS (http://www.nsms.com.br/)",
+   "abstract" : "API para enviar SMS atrav\u00c3\u00a9s da NSMS (http://www.nsms.com.br/)",
    "author" : [
       "Thiago Rondon <thiago@nsms.com.br>"
    ],
@@ -54,6 +54,6 @@
          "web" : "http://github.com/maluco/NSMS-API"
       }
    },
-   "version" : "0.005"
+   "version" : "0.006"
 }
 

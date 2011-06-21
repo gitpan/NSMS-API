@@ -13,8 +13,8 @@ use LWP::UserAgent;
 use JSON;
 use utf8;
 
-# ABSTRACT: API para enviar SMS atrav&eacute;s da NSMS (http://www.nsms.com.br/)
-our $VERSION = '0.005'; # VERSION
+# ABSTRACT: API para enviar SMS através da NSMS (http://www.nsms.com.br/)
+our $VERSION = '0.006'; # VERSION
 
 
 has ua => (
@@ -150,11 +150,11 @@ __END__
 
 =head1 NAME
 
-NSMS::API - API para enviar SMS atrav&eacute;s da NSMS (http://www.nsms.com.br/)
+NSMS::API - API para enviar SMS através da NSMS (http://www.nsms.com.br/)
 
 =head1 VERSION
 
-version 0.005
+version 0.006
 
 =head1 SYNOPSIS
 

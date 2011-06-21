@@ -1,9 +1,9 @@
 NAME
-    NSMS::API - API para enviar SMS atrav&eacute;s da NSMS
+    NSMS::API - API para enviar SMS através da NSMS
     (http://www.nsms.com.br/)
 
 VERSION
-    version 0.005
+    version 0.006
 
 SYNOPSIS
         use NSMS::API;

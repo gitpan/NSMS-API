@@ -9,7 +9,7 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'API para enviar SMS atrav&eacute;s da NSMS (http://www.nsms.com.br/)',
+  'ABSTRACT' => 'API para enviar SMS através da NSMS (http://www.nsms.com.br/)',
   'AUTHOR' => 'Thiago Rondon <thiago@nsms.com.br>',
   'BUILD_REQUIRES' => {
     'English' => '0',
@@ -37,7 +37,7 @@ my %WriteMakefileArgs = (
     'URI::Escape' => '0',
     'utf8' => '0'
   },
-  'VERSION' => '0.005',
+  'VERSION' => '0.006',
   'test' => {
     'TESTS' => 't/*.t'
   }

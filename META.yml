@@ -31,4 +31,4 @@ requires:
 resources:
   bugtracker: http://github.com/maluco/NSMS-API/issues
   repository: git://github.com/maluco/NSMS-API.git
-version: 0.003
+version: 0.005
